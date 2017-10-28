@@ -6,13 +6,30 @@
 }
 
 a:visited {
-    color: #605495
+    color: #fff;
+}
+
+#text {
+  float: right ;
+  width: 50% ;
+}
+#mac {
+  float: right;
+  width: 50%;
+}
+#text2 {
+  float: left ;
+  width: 50% ;
+}
+#mac2 {
+  float: left;
+  width: 50%;
 }
 
 body {
     background: #fff;
     color: black;
-    font-family: 'exo';
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
@@ -36,24 +53,30 @@ ul {
 }
 
 #projectAbout {
-    height: 50vh;
+    height: 33vh;
     padding: 20px 0px 20px 0px;
+    background: #8CC63E;
+    color: #FFF;
+}
+
+#project2 {
+    background-color: #8CC63E;
+}
+
+#project3 {
+    background: #fff;
 }
 
 
 #project1, #project2, #project3{
-    height: 100vh;
+    height: 85vh;
     padding: 20px 0px 20px 0px;
 }
 
 #project1, #project3 {
-    background-image: url(images/lemon-bg2.png);
+   /* background-image: url(images/lemon-bg2.png);*/
     background-attachment: fixed;
     background-size: cover;
-}
-
-#project2 {
-    background: #605495;
 }
 
 .headerImage {
@@ -63,9 +86,9 @@ ul {
 
 .purple {
     background-image: url(images/lemon-bg2.png);
+    color: black;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
     /*padding: 2em;*/
     /*margin-bottom: 20px;*/
     height: 95vh;
@@ -73,13 +96,13 @@ ul {
 
 .purple h1 {
      position: absolute;
-     top: 50%;
+     top: 33%;
      left: 50%;
     transform: translate(-50%, -50%);
 }
 .purple h2 { 
   position: absolute;
-  top: 65%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
 font-size: 20px;
@@ -91,9 +114,9 @@ font-size: 20px;
     transform: translate(-50%, -50%);
     font-size: 20px;
 }
-.purple a {
-    color: #fff;
+a {
     text-decoration: none;
+    color: black;
 }
 
 .section {
@@ -122,12 +145,6 @@ h2 {
     margin-bottom: 1em;
     font-style: italic;
 	margin-top: .5em;
-}
-
-.purple h1,
-.purple h2,
-.purple h3 {
-    color: white;
 }
 
 h3 {
@@ -329,7 +346,9 @@ hr {
 }
 
 .footer {
-    background-color: #605495;
+    background-image: url(images/lemon-bg2.png);
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
     height: 50vh;
     margin-bottom: 0px;
@@ -355,7 +374,7 @@ hr {
 }
 
 .fotorama--fullscreen .fotorama__stage {
-    background-color: white;
+    background-color: transparent;
 }
 
 .fotorama {
@@ -363,11 +382,11 @@ hr {
 }
 
 .fotorama__fullscreen-icon {
-	background-color: #605495;
+	background-color: #000;
 }
 
 .fotorama__dot{
-	border: 1px solid #605495;
+	border: 1px solid #000;
 }
 
 /*---Tablet------*/
