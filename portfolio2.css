@@ -35,7 +35,13 @@ ul {
 	padding-bottom: 35px;
 }
 
-#project1, #project2, #project3, #projectAbout {
+#projectAbout {
+    height: 50vh;
+    padding: 20px 0px 20px 0px;
+}
+
+
+#project1, #project2, #project3{
     height: 100vh;
     padding: 20px 0px 20px 0px;
 }
@@ -61,8 +67,8 @@ ul {
     background-attachment: fixed;
     color: white;
     /*padding: 2em;*/
-    margin-bottom: 20px;
-    height: 100vh;
+    /*margin-bottom: 20px;*/
+    height: 95vh;
 }
 
 .purple h1 {
@@ -80,7 +86,7 @@ font-size: 20px;
 }
 .purple p {
     position: absolute;
-    top: 95%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
@@ -88,13 +94,6 @@ font-size: 20px;
 .purple a {
     color: #fff;
     text-decoration: none;
-}
-
-
-
-.footer {
-	margin-bottom: 0px;
-	text-align: center;
 }
 
 .section {
@@ -332,7 +331,9 @@ hr {
 .footer {
     background-color: #605495;
     color: white;
-    height: 100vh;
+    height: 50vh;
+    margin-bottom: 0px;
+	text-align: center;
 }
 
 .icons {
