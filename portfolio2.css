@@ -61,6 +61,9 @@ ul {
     background: #8CC63E;
     color: #FFF;
 }
+#projectAbout p {
+    text-align: left;
+}
 
 #project2 {
     background-color: #8CC63E;
@@ -178,6 +181,7 @@ samp {
         position: sticky;
     top: 0;
     background: #fff;
+    z-index: 99999999;
 }
 
 .nav li {
