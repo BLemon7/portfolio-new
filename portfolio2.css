@@ -56,7 +56,7 @@ ul {
 }
 
 #projectAbout {
-    height: 33vh;
+    height: 100vh;
     padding: 20px 0px 20px 0px;
     background: #8CC63E;
     color: #FFF;
@@ -73,7 +73,7 @@ ul {
 #project1,
 #project2,
 #project3 {
-    height: 85vh;
+    height: 95vh;
     padding: 20px 0px 20px 0px;
 }
 
@@ -91,7 +91,7 @@ ul {
 
 .purple {
     background-image: url(images/lemon-bg2.png);
-    color: black;
+    color: #fff;
     background-size: cover;
     background-attachment: fixed;
     /*padding: 2em;*/
@@ -175,6 +175,9 @@ samp {
     margin: 0;
     padding: 0;
     text-align: center;
+        position: sticky;
+    top: 0;
+    background: #fff;
 }
 
 .nav li {
@@ -183,13 +186,13 @@ samp {
 
 .nav a {
     display: inline-block;
-    color: #605495;
+    color: #8CC63E;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .nav li a:hover {
-    background-color: #605495;
+    background-color: #8CC63E;
     color: white;
 }
 
@@ -207,7 +210,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
-    color: black;
+    color: #8CC63E;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -373,9 +376,9 @@ hr {
 /*CSS for Illustrations page*/
 
 #thumbnails {
-    height: inherit;
+    height: 40vh;
     /*padding: 20px 0px 20px 0px;*/
-    background: #8CC63E;
+    background: #FFF;
     color: #FFF;
 }
 
@@ -394,11 +397,55 @@ hr {
 #preview img:hover {
     cursor: pointer;
     opacity: 0.5;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+
+#preview2 {
+    float: left;
+    width: 50%;
+    margin: 0 0 20px 0;
+}
+
+#preview2 img {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+#preview2 img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+/*.border {
+  display: inline-block;
+  position: relative;
+}
+.border::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 0 rgba(255,255,255,.5);
+  transition: box-shadow .1s ease;
+}
+.border:hover::after {
+  box-shadow: inset 0 0 0 10px rgba(255,255,255,.5);
+}
+img {
+  display: block;
+  position: relative;
+} */
 
 /*#garamond {
     float: left;
