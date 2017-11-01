@@ -8,6 +8,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
         <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="portfolio2.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
@@ -51,9 +52,9 @@
     </head>
 
     <section id="wrapper">
-        
-        <ul class="nav">
-                <li><a href="#projectHeader">CV</a></li>
+
+        <!--  <ul class="nav">
+                <li><a href="cv.html">CV</a></li>
                 <li><a href="#projectAbout">About</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Portfolio</a>
@@ -66,80 +67,114 @@
                         <a href="#project6"></a>
                         <a href="#project7"></a>
                         <a href="#project8"></a> -->
-                    </div>
-                </li>
-            </ul>
+        </div>
+        </li>
+        </ul>
 
         <section class="purple">
             <h1>Illustrations</h1>
-            <h2>Aspiring User Experience Designer.</h2>
-            <p>Welcome to my portfolio site. Here I have compiled the work I have completed this semester's module, IXD103, where I have been establishing my brand identity. This includes visual identities such as my monogram, word mark, and visual mark. There is also some work from the previous semester to be seen.</p>
+            <p>About / <a href="cv.html">CV</a> / <a href="#footer">Contact</a></p>
         </section>
 
-        
+        <!-- THUMBNAILS -->
+        <section id="thumbnails">
+            <div id="preview">
+                <img src="images/icons-thumbnail.png">
+            </div>
+
+            <div id="preview">
+                <img src="images/garamond-mockup.png">
+            </div>
+
+            <div id="preview">
+                <img src="images/infographic-tn.png">
+            </div>
+
+            <div id="preview">
+                <img src="images/master-app-thn.png">
+            </div>
+
+
+
+        </section>
+
+
 
         <!-- PROJECT 1 -->
         <section id="project1">
-            <h1>Icons, Illustrations, Infographics</h1>
-            <h2></h2>
-
-            <p>Various icon sets and other graphics I have created </p>
-            <center>
-                <!--img src="images/final_monogram.png" height="500px"-->
-                <!-- 2. Add images to <div class="fotorama"></div>. -->
+            <div id="text">
+                <h1>12 Item Survival Kit</h1>
+                <p>For IXD302 I decided to create 12 icons based on a survival kit.</p>
+                <center>
+            </div>
+            <!--img src="images/final_monogram.png" height="500px"-->
+            <!-- 2. Add images to <div class="fotorama"></div>. -->
+            <div id="mac">
                 <div class="fotorama" data-height="450" data-allowfullscreen="true">
-                    <img src="images/eiffel.png">
-                    <img src="images/GaramondPoster.png" data-caption="Posters" height="50px">
+                    <img src="images/survival-mockup.png">
+                    <img src="images/garamond-mockup.png" height="50px">
+                    <img src="images/eiffel-mockup.png">
+                    <img src="images/master-app-thn.png">
+
                 </div>
+            </div>
             </center>
 
         </section>
-        
-        
+
+
 
         <!-- PROJECT 2 -->
         <section id="project2">
-            <h1>Brand Content</h1>
-            <h2></h2>
+            <div id="text2">
+                <h1>Typeface Poster</h1>
+                <h2></h2>
 
-            <p>Brand guidelines designed for myself</p>
-            <center>
-                <div class="fotorama" data-allowfullscreen="true">
-                    <img src="images/word_marque.png" data-caption="Colour version" height="500">
-                    <img src="images/word_marque_black.png" data-caption="Monochrome/contrast" height="500">
+                <p>Brand guidelines designed for myself</p>
+                <center>
+            </div>
+            <div id="mac">
+                <div class="fotorama" data-allowfullscreen="false">
+                    <img src="images/garamond-mockup.png">
+                    <img src="images/guidelines-mac.png">
+                    <!--<img src="images/word_marque.png" data-caption="Colour version" height="500">
+                    <img src="images/word_marque_black.png" data-caption="Monochrome/contrast" height="500">-->
                 </div>
+            </div>
             </center>
 
         </section>
 
-        
+
 
         <!-- PROJECT 3 -->
         <section id="project3">
-            <h1>Apps</h1>
-            <h2></h2>
-
-            <p>App concepts and visuals</p>
-
-            <center>
-                <div class="fotorama" data-height="500" data-allowfullscreen="true">
-                    <img src="images/travel_app-01.png" height="50px">
-                </div>
+            <div id="text">
+                <h1>Master Apprentice exercises</h1>
+                <p>Illustrations I have recreated based on existing work</p>
+            </div>
+            <div id="mac">
+                <center>
+                    <div class="fotorama" data-height="500" data-allowfullscreen="true">
+                        <img src="images/master-app-thn.png">
+                        <img src="images/travel_app-01.png" height="50px">
+                    </div>
+            </div>
             </center>
 
         </section>
 
 
 
-        <section class="footer">
+        <section class="footer" id="footer">
             <section class="icons">
-            <a href="https://brendanlemon.tumblr.com"><img src="images/tumblr.svg" height="40px" width="40px" hspace="20px"></a>
-            <a href="https://twitter.com/brendanIemon"> <img src="images/twitter.svg" height="40px" width="40px" hspace="20px"></a>
-            <a href="https://github.com/BLemon7"><img src="images/github.svg" height="40px" width="40px" hspace="20px"></a>
-            <a href="mailto:brendanplemon@gmail.com"><img src="images/email.svg" height="40px" width="40px" hspace="20px"></a>
+                <a href="https://brendanlemon.tumblr.com"><img src="images/tumblr.svg" height="40px" width="40px" hspace="20px"></a>
+                <a href="https://twitter.com/brendanIemon"> <img src="images/twitter.svg" height="40px" width="40px" hspace="20px"></a>
+                <a href="https://github.com/BLemon7"><img src="images/github.svg" height="40px" width="40px" hspace="20px"></a>
+                <a href="mailto:brendanplemon@gmail.com"><img src="images/email.svg" height="40px" width="40px" hspace="20px"></a>
             </section>
             <a href="#" class="scroll-to-top" title="Back to top"><i class="icon-chevron-up"></i></a>
-            
+
         </section>
 
     </section>

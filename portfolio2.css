@@ -10,20 +10,23 @@ a:visited {
 }
 
 #text {
-  float: right ;
-  width: 50% ;
+    float: right;
+    width: 50%;
 }
+
 #mac {
-  float: right;
-  width: 50%;
+    float: right;
+    width: 50%;
 }
+
 #text2 {
-  float: left ;
-  width: 50% ;
+    float: left;
+    width: 50%;
 }
+
 #mac2 {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
 
 body {
@@ -49,7 +52,7 @@ ul {
 }
 
 #projectHeader {
-	padding-bottom: 35px;
+    padding-bottom: 35px;
 }
 
 #projectAbout {
@@ -67,21 +70,23 @@ ul {
     background: #fff;
 }
 
-
-#project1, #project2, #project3{
+#project1,
+#project2,
+#project3 {
     height: 85vh;
     padding: 20px 0px 20px 0px;
 }
 
-#project1, #project3 {
-   /* background-image: url(images/lemon-bg2.png);*/
+#project1,
+#project3 {
+    /* background-image: url(images/lemon-bg2.png);*/
     background-attachment: fixed;
     background-size: cover;
 }
 
 .headerImage {
-	text-align: center;
-	padding: 15px 0px;
+    text-align: center;
+    padding: 15px 0px;
 }
 
 .purple {
@@ -95,18 +100,20 @@ ul {
 }
 
 .purple h1 {
-     position: absolute;
-     top: 33%;
-     left: 50%;
+    position: absolute;
+    top: 33%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
-.purple h2 { 
-  position: absolute;
-  top: 44%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-font-size: 20px;
+
+.purple h2 {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
 }
+
 .purple p {
     position: absolute;
     top: 90%;
@@ -114,6 +121,7 @@ font-size: 20px;
     transform: translate(-50%, -50%);
     font-size: 20px;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -144,7 +152,7 @@ h2 {
     font-size: 2.25em;
     margin-bottom: 1em;
     font-style: italic;
-	margin-top: .5em;
+    margin-top: .5em;
 }
 
 h3 {
@@ -161,7 +169,7 @@ samp {
 }
 
 .nav {
-  /*  border: 1px solid #ccc; */
+    /*  border: 1px solid #ccc; */
     border-width: 1px 0;
     list-style: none;
     margin: 0;
@@ -342,7 +350,6 @@ hr {
 
 .scroll-to-top:hover {
     background: rgba(0, 0, 0, 0.8);
-    
 }
 
 .footer {
@@ -352,7 +359,7 @@ hr {
     color: white;
     height: 50vh;
     margin-bottom: 0px;
-	text-align: center;
+    text-align: center;
 }
 
 .icons {
@@ -360,10 +367,74 @@ hr {
     left: 50%;
     padding-top: 45%;
     transform: translate(-50%, -50%);
-    
 }
 
 
+/*CSS for Illustrations page*/
+
+#thumbnails {
+    height: inherit;
+    /*padding: 20px 0px 20px 0px;*/
+    background: #8CC63E;
+    color: #FFF;
+}
+
+#preview {
+    float: left;
+    width: 25%;
+    margin: 0 0 20px 0;
+}
+
+#preview img {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+#preview img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+/*#garamond {
+    float: left;
+    width: 25%;
+    margin: 0 0 20px 0;
+}
+
+#garamond img {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+#infographic {
+    float: left;
+    width: 25%;
+    margin: 0 0 20px 0;
+}
+
+#infographic img {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+#masterappr {
+    float: left;
+    width: 25%;
+    margin: 0 0 20px 0;
+}
+
+#masterappr img {
+    display: block;
+    margin: 0;
+    width: 100%;
+}*/
 
 
 /* override fotorama full screen backgorund colour and other css*/
@@ -378,16 +449,17 @@ hr {
 }
 
 .fotorama {
-	padding: 10px 0px;
+    padding: 10px 0px;
 }
 
 .fotorama__fullscreen-icon {
-	background-color: #000;
+    background-color: #000;
 }
 
-.fotorama__dot{
-	border: 1px solid #000;
+.fotorama__dot {
+    border: 1px solid #000;
 }
+
 
 /*---Tablet------*/
 
@@ -407,9 +479,8 @@ hr {
 
 /*---Smartphone------*/
 
-@media (max-width: 30em) {
+@media (max-width: 780px) {
     body {
-        background-color: #605495;
         margin: auto 0;
         width: 90%;
         font-size: 115%;
