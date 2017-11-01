@@ -9,25 +9,20 @@ a:visited {
     color: #fff;
 }
 
-#text {
+#text, #mac, #text2, #mac2 {
+    width: 50%;
+        padding-top: 45px;
+}
+
+#text, #mac {
     float: right;
-    width: 50%;
 }
 
-#mac {
-    float: right;
-    width: 50%;
-}
-
-#text2 {
+#text2, #mac2 {
     float: left;
-    width: 50%;
 }
 
-#mac2 {
-    float: left;
-    width: 50%;
-}
+
 
 body {
     background: #fff;
@@ -73,10 +68,11 @@ ul {
     background: #fff;
 }
 
+#projectAbout,
 #project1,
 #project2,
 #project3 {
-    height: 95vh;
+    height: 85vh;
     padding: 20px 0px 20px 0px;
 }
 
@@ -111,7 +107,7 @@ ul {
 
 .purple h2 {
     position: absolute;
-    top: 44%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
@@ -119,7 +115,7 @@ ul {
 
 .purple p {
     position: absolute;
-    top: 90%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
@@ -182,6 +178,7 @@ samp {
     top: 0;
     background: #fff;
     z-index: 99999999;
+    display: block;
 }
 
 .nav li {
@@ -364,7 +361,7 @@ hr {
     background-attachment: fixed;
     background-size: cover;
     color: white;
-    height: 50vh;
+    height: 55vh;
     margin-bottom: 0px;
     text-align: center;
 }
