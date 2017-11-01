@@ -426,6 +426,31 @@ hr {
     transition: all 0.1s ease-in-out;
 }
 
+#cv-left, #cv-right {
+	padding-top: 20px;
+}
+
+#cv-left {
+	background: #8CC63E;
+    color: #FFF;
+}
+
+#cv-right h4 {
+	font-size: 1em;
+	font-weight: bold;
+}
+.cv-text {
+	display: block;
+     max-width: 100%;
+     text-align: left;
+     margin: 0; 
+     font-size: 0.8em;
+}
+
+.cv-bullets {
+	color: black;
+}
+
 /*.border {
   display: inline-block;
   position: relative;
