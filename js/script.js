@@ -1,0 +1,51 @@
+$(document).ready(function() {
+
+		// animate the anchor click
+		$('a[href^="#project"]').on('click', function(e) {
+				e.preventDefault();
+
+				var target = this.hash;
+				var $target = $(target);
+
+				$('html, body').stop().animate({
+						'scrollTop': $target.offset().top
+				}, 900, 'swing', function() {
+						window.location.hash = target;
+				});
+		});
+
+		// when the page scrolls animate the scroll to top button to fade in or out
+		$(window).scroll(function() {
+				if ($(this).scrollTop() > 100) {
+						$('.scroll-to-top').fadeIn();
+				} else {
+						$('.scroll-to-top').fadeOut();
+				}
+		});
+
+		//click to scroll to top
+		$('.scroll-to-top').click(function() {
+				$('html, body').animate({
+						scrollTop: 0
+				}, 800);
+				return false;
+		});
+
+	// hide .navbar first
+	$(".navbar").hide();
+
+	// fade in .navbar
+	$(function () {
+			$(window).scroll(function () {
+
+							 // set distance user needs to scroll before we start fadeIn
+					if ($(this).scrollTop() > 100) {
+							$('.navbar').fadeIn();
+					} else {
+							$('.navbar').fadeOut();
+					}
+			});
+	});
+		
+		
+});
