@@ -32,7 +32,7 @@ $(document).ready(function() {
 		});
 
 	// hide .navbar first
-	$(".navbar").hide();
+	$(".navbar.home").hide();
 
 	// fade in .navbar
 	$(function () {
@@ -40,9 +40,9 @@ $(document).ready(function() {
 
 							 // set distance user needs to scroll before we start fadeIn
 					if ($(this).scrollTop() > 100) {
-							$('.navbar').fadeIn();
+							$('.navbar.home').fadeIn();
 					} else {
-							$('.navbar').fadeOut();
+							$('.navbar.home').fadeOut();
 					}
 			});
 	});
