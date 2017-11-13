@@ -1,160 +1,135 @@
 <!DOCTYPE html>
 <html>
-
 <body>
 
-    <head>
-        <meta charset="utf-8" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-        <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="portfolio2.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
-        <script>
-            $(document).ready(function() {
-
-                // animate the anchor click
-                $('a[href^="#project"]').on('click', function(e) {
-                    e.preventDefault();
-
-                    var target = this.hash;
-                    var $target = $(target);
-
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top
-                    }, 900, 'swing', function() {
-                        window.location.hash = target;
-                    });
-                });
-
-                // when the page scrolls animate the scroll to top button to fade in or out
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() > 100) {
-                        $('.scroll-to-top').fadeIn();
-                    } else {
-                        $('.scroll-to-top').fadeOut();
-                    }
-                });
-
-                //click to scroll to top
-                $('.scroll-to-top').click(function() {
-                    $('html, body').animate({
-                        scrollTop: 0
-                    }, 800);
-                    return false;
-                });
-            });
-
-        </script>
-    </head>
-
-    <section id="wrapper">
-        
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li class="dropdown">
-                <a href="index.html#project1" class="dropbtn">Portfolio</a>
-                <div class="dropdown-content">
-                    <a href="index.html#project1">Icons, Illustrations, Infographics</a>
-                    <a href="index.html#project2">Brand Content</a>
-                    <a href="index.html#project3">Apps</a>
-                    <!-- <a href="#project4"></a>
-                        <a href="#project5"></a>
-                        <a href="#project6"></a>
-                        <a href="#project7"></a>
-                        <a href="#project8"></a> -->
-                </div>
-                <li><a href="index.html#projectfooter">Contact</a></li>
-            </li>
-        </ul>
-        <section>
+	<head>
+		<meta charset="utf-8" />
+		<!-- set view port for bootstrap responsiveness -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-			<div class="row" style="padding-top:20px">
-			
-				<div id="cv-left" class="col-sm-12 col-md-6">
-					<h1>CV</h1>
-					<h2>Aspiring User Experience Designer.</h2>
-				</div>
-				
-				<div id="cv-right" class="col-sm-12 col-md-6">
-				  <div class="row">
-					<div class="col-sm-12 col-md-3"><h4>Personal Statement</h4></div>
-					<div class="col-sm-12 col-md-9">
-						
-						<p class="cv-text">As a current Student approaching second year of BDes Interaction Design at Ulster University I have had the opportunity to utilise a range of technologies/platforms (e.g. HTML/CSS/Photoshop/Javascript) and experience the full development lifecycle. </p>
-						<br>
-						<p class="cv-text">A structured and logical thinker, I enjoy the challenge that comes with learning new technologies and expanding my abilities.   As a dedicated student I put the time in to complete my project and always try to further my own knowledge.</p>
-
-					</div>
-				  </div>
-			
-				  <br ><br >
-
-				  <div class="row">
-					<div class="col-sm-12 col-md-3"><h4>University Projects</h4></div>
-					<div class="col-sm-12 col-md-9">
-						
-						<p class="cv-text"><strong>Portfolio 1</strong></p>
-						<br>
-						<p class="cv-text">Portfolio 1 was my first project, on it I designed my first logo and branding</p>
-						<br >
-						<p class="cv-text"><strong>Portfolio 2</strong></p>
-						<br>
-						<p class="cv-text">Portfolio 1 was my second project, on it I took my first logo and branding to the next level</p>
-					</div>
-				  </div>
-				  	  
-				  <br ><br >
-				  
-				  
-				  <div class="row">
-					<div class="col-sm-12 col-md-3"><h4>Technologies Used</h4></div>
-					<div class="col-sm-12 col-md-9">
-						<p class="cv-text"><strong>Technical</strong></p>
-						<p class="cv-text">I have a keen interest in technology and always look to improve my knowledge level. My experience in GolfNow as a junior web analyst has been invaluable in developing my core frontend development skills. The key technologies I have utilised within educational and work related projects are:</p>
-						<br><br>
-						<p class="cv-text"><strong>Practitioner: HTML, CSS, Adobe Illustrator/Photoshop</strong></p>
-						<p class="cv-text">(1+ years) </p>
-						<br><br>
-						<p class="cv-text"><strong>Awareness:, GitHub, JavaScript, jQuery, WordPress</strong></p>
-						<p class="cv-text">(< 1 year)</p>
-						<br><br>
-						<p class="cv-text"><strong>Communication</strong></p>
-						<p class="cv-text">My current course involves working with other students to complete projects in addition to participating in group critiques. In GolfNow I work closely with my co-workers in the Operations team to solve issues regarding client websites. </p>
-						 <br><br>
-						<p class="cv-text"><strong>Teamwork</strong></p>
-						<p class="cv-text">I have worked in single and multiple team environments during my education.</p>
-
-					</div>
-				  </div>
-				  
-				</div>
-			
+		<title>Curriculum vitae</title>
+		
+		<!-- external CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+		<!-- internal CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- external JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<!-- internal JS -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand  hidden-md  hidden-lg" href="#">Brendan Lemon</a>
 			</div>
-			
-			
-           
-            
-        </section>
+		
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a href="index.html">Home</a></li>
+					<li class="nav-item active"><a href="cv.html">CV <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Portfolio <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="nav-item"><a href="index.html#projectIcons">Icons, Illustrations, Infographics</a></li>
+							<li class="nav-item"><a href="index.html#projectBrandContent">Brand Content</a></li>
+							<li class="nav-item"><a href="index.html#projectApps">Apps</a></li>
+						</ul>
+					</li>
+					<li><a href="index.html#projectContact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="row">
 
+		<div id="cv-left" class="col-sm-12 col-md-6 header ">
+			<div class="opacity-layer">
+				<span>Brendan Lemon</span>
+				<h2>Curriculum vitae</h2>
+				<p>As a 2nd year student in BDes Interaction Design at Ulster University, Belfast I'm broadening my experience in creating designs for consumer and enterprise level interfaces.</p>				
+				<p>I also have has hands on work experience putting the things I've learned at University to practical use.</p>
+			</div>
+		</div>
 
-    </section>
+		<div id="cv-right" class="col-sm-12 col-md-6">
+			<div class="row">
+				<div class="col-sm-12 col-md-3"><h4>Personal Statement</h4></div>
+				<div class="col-sm-12 col-md-9">
+					<p class="cv-text">As a current Student approaching second year of BDes Interaction Design at Ulster University I have had the opportunity to utilise a range of technologies/platforms (e.g. HTML/CSS/Photoshop/Javascript) and experience the full development lifecycle. </p>
+					<br>
+					<p class="cv-text">A structured and logical thinker, I enjoy the challenge that comes with learning new technologies and expanding my abilities.   As a dedicated student I put the time in to complete my project and always try to further my own knowledge.</p>
+				</div>
+			</div>
 
-    <a href="#" class="scroll-to-top" title="Back to top"><i class="icon-chevron-up"></i></a>
+			<br ><br >
 
-</body>
+			<div class="row">
+				<div class="col-sm-12 col-md-3"><h4>University Projects</h4></div>
+				<div class="col-sm-12 col-md-9">
+					<p class="cv-text"><strong>Portfolio 1</strong></p>
+					<br>
+					<p class="cv-text">Portfolio 1 was my first project, on it I designed my first logo and branding</p>
+					<br >
+					<p class="cv-text"><strong>Portfolio 2</strong></p>
+					<br>
+					<p class="cv-text">Portfolio 1 was my second project, on it I took my first logo and branding to the next level</p>
+				</div>
+			</div>
 
-</html>
+			<br ><br >
 
-<a href="#" class="scroll-to-top" title="Back to top"><i class="icon-chevron-up"></i></a>
+			<div class="row">
+				<div class="col-sm-12 col-md-3"><h4>Technologies Used</h4></div>
+				<div class="col-sm-12 col-md-9">
+					<p class="cv-text"><strong>Technical</strong></p>
+					<p class="cv-text">I have a keen interest in technology and always look to improve my knowledge level. My experience in GolfNow as a junior web analyst has been invaluable in developing my core frontend development skills. The key technologies I have utilised within educational and work related projects are:</p>
+					<br><br>
+					<p class="cv-text"><strong>Practitioner: HTML, CSS, Adobe Illustrator/Photoshop</strong></p>
+					<p class="cv-text">(1+ years) </p>
+					<br><br>
+					<p class="cv-text"><strong>Awareness:, GitHub, JavaScript, jQuery, WordPress</strong></p>
+					<p class="cv-text">(< 1 year)</p>
+					<br><br>
+					<p class="cv-text"><strong>Communication</strong></p>
+					<p class="cv-text">My current course involves working with other students to complete projects in addition to participating in group critiques. In GolfNow I work closely with my co-workers in the Operations team to solve issues regarding client websites. </p>
+					<br><br>
+					<p class="cv-text"><strong>Teamwork</strong></p>
+					<p class="cv-text">I have worked in single and multiple team environments during my education.</p>
+				</div>
+			</div>
 
-</section>
+		</div>
 
+	</div>
+	
+	<!-- Social -->
+	<div class="row" id="projectSocialIcons" style="background-color: #449d44; text-align: center;">
+		<div class="col-sm-12">
+			<a href="https://brendanlemon.tumblr.com" class="tumblr"></a>
+			<a href="https://twitter.com/brendanIemon" class="twitter"></a>
+			<a href="https://www.instagram.com/brendanplemon/?hl=en" class="instagram"></a>
+		</div>
+	</div>
+
+	<!-- back to top link -->
+  <a href="#" class="scroll-to-top" title="Back to top"><i class="icon-chevron-up"></i></a>
 </body>
 
 </html>

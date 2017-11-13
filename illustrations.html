@@ -3,194 +3,160 @@
 
 <body>
 
-    <head>
-        <meta charset="utf-8" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-        <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="portfolio2.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<head>
+		<meta charset="utf-8" />
+		<!-- set view port for bootstrap responsiveness -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Illustrations</title>
+		
+		<!-- external CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+		<!-- internal CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- external JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<!-- internal JS -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-
-        <script>
-            $(document).ready(function() {
-
-                // animate the anchor click
-                $('a[href^="#project"]').on('click', function(e) {
-                    e.preventDefault();
-
-                    var target = this.hash;
-                    var $target = $(target);
-
-                    $('html, body').stop().animate({
-                        'scrollTop': $target.offset().top
-                    }, 900, 'swing', function() {
-                        window.location.hash = target;
-                    });
-                });
-
-                // when the page scrolls animate the scroll to top button to fade in or out
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() > 100) {
-                        $('.scroll-to-top').fadeIn();
-                    } else {
-                        $('.scroll-to-top').fadeOut();
-                    }
-                });
-
-                //click to scroll to top
-                $('.scroll-to-top').click(function() {
-                    $('html, body').animate({
-                        scrollTop: 0
-                    }, 800);
-                    return false;
-                });
-            });
-
-        </script>
-    </head>
-
-    <section id="wrapper">
-
-
-        <section class="purple">
-            <h1>Illustrations</h1>
-           <!-- <p>Home / <a href="cv.html">CV</a> / <a href="#footer">Contact</a></p>-->
-        </section>
-        
-       <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li class="dropdown">
-                <a href="#project1" class="dropbtn">Portfolio</a>
-                <div class="dropdown-content">
-                    <a href="index.html#project1">Icons, Illustrations, Infographics</a>
-                    <a href="index.html#project2">Brand Content</a>
-                    <a href="index.html#project3">Apps</a>
-                </div>
-                <li><a href="#projectfooter">Contact</a></li>
-            </li>
-        </ul>
-
-        <!-- THUMBNAILS -->
-        <section id="thumbnails">
-
-            
-            <div id="preview" class="border">
-                <a href="#project1"><img src="images/icons-thumbnail.png"></a>
-            </div>
-
-            <div id="preview" class="border">
-                 <a href="#project2"><img src="images/garamond-mockup.png"></a>
-            </div>
-
-            <div id="preview" class="border">
-                 <img src="images/infographic-tn.png">
-            </div>
-
-            <div id="preview" class="border">
-                <a href="#project3"><img src="images/master-app-thn.png"></a>
-            </div>
+		<div class="row home header">
+			<div class="container opacity-layer">
+				<div class="row"><div class="col-sm-12"><span>Brendan Lemon</span></div></div>
+				<div class="row"><div class="col-sm-12"><h2>Icons, Illustrations, Infographics</h2></div></div>
+				<div class="row"><div class="col-sm-8"><p>I'm a 2nd year student in BDes Interaction Design at Ulster University, Belfast and have a keen interest in UI/UX design and Illustration.</p></div></div>
+			</div>
+		</div>
+		
+		<nav class="navbar navbar-default home">
+			<div class="container-fluid">
+			
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand  hidden-md  hidden-lg" href="#">Brendan Lemon</a>
+				</div>
+			
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="nav-item"><a href="index.html">Home</a></li>
+						<li class="nav-item"><a href="cv.html">CV</a></li>
+						<li class="nav-item dropdown active">
+							<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Portfolio <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="nav-item active"><a href="index.html#projectIcons">Icons, Illustrations, Infographics <span class="sr-only">(current)</span></a></li>
+								<li class="nav-item"><a href="index.html#projectBrandContent">Brand Content</a></li>
+								<li class="nav-item"><a href="index.html#projectApps">Apps</a></li>
+							</ul>
+						</li>
+						<li><a href="index.html#projectContact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
 
+		<div class="row preview">
+			<div class="col-sm-3"><a href="#projectSurvival"><img src="images/icons-thumbnail.png"></a></div>
+			<div class="col-sm-3"><a href="#projectMasterApprentice"><img src="images/master-app-thn.png"></a></div>
+			<div class="col-sm-3"><a href="#projectTypeface"><img src="images/garamond-mockup.png"></a></div>
+			<div class="col-sm-3"><img src="images/infographic-tn.png"></div>
+		</div>
+				
 
-        </section>
-
-
-
-        <!-- PROJECT 1 -->
-        <section id="project1">
-
-            <div id="text">
-                <h1>12 Item Survival Kit</h1>
-                <p>For IXD302 I decided to create 12 icons based on a survival kit.</p>
-                <center>
-            </div>
-            <!--img src="images/final_monogram.png" height="500px"-->
-            <!-- 2. Add images to <div class="fotorama"></div>. -->
-            <div id="mac">
-                <div class="fotorama" data-height="450" data-allowfullscreen="false">
-                    <img src="images/survival-mockup.png">
-                    <img src="images/garamond-mockup.png" height="50px">
-                    <img src="images/eiffel-mockup.png">
-                    <img src="images/master-app-thn.png">
-
-                </div>
-            </div>
-            </center>
-
-        </section>
-
-
-
-        <!-- PROJECT 2 -->
-        <section id="project2">
-            <div id="text2">
-                <h1>Typeface Poster</h1>
-                <h2></h2>
-
-                <p>Brand guidelines designed for myself</p>
-                <center>
-            </div>
-            <div id="mac">
-                <div class="fotorama" data-height="450" data-allowfullscreen="false">
-                    <img src="images/garamond-mockup.png">
-                    <img src="images/guidelines-mac.png">
-                    <!--<img src="images/word_marque.png" data-caption="Colour version" height="500">
-                    <img src="images/word_marque_black.png" data-caption="Monochrome/contrast" height="500">-->
-                </div>
-            </div>
-            </center>
-
-        </section>
-
-
-
-        <!-- PROJECT 3 -->
-        <section id="project3">
-            <div id="text">
-                <h1>Master Apprentice exercises</h1>
-                <p>Illustrations I have recreated based on existing work</p>
-            </div>
-            <div id="mac">
-                <center>
-                    <div class="fotorama" data-height="500" data-allowfullscreen="false">
-                        <img src="images/master-app-thn.png">
-                        <img src="images/travel_app-01.png" height="50px">
-                    </div>
-            </div>
-            </center>
-
-        </section>
-
-
-
-        <section class="footer" id="projectfooter">
-            <section class="icons">
-                <h2>Get in touch!</h2>
-                <p><a href="mailto:brendan@brendanlemon.com">brendan@brendanlemon.com</a></p>
-                <a href="https://brendanlemon.tumblr.com"><img src="images/tumblr.svg" height="40px" width="40px" hspace="20px"></a>
-                <a href="https://twitter.com/brendanIemon"> <img src="images/twitter.svg" height="40px" width="40px" hspace="20px"></a>
-                <a href="https://github.com/BLemon7"><img src="images/github.svg" height="40px" width="40px" hspace="20px"></a>
-                <a href="mailto:brendanplemon@gmail.com"><img src="images/email.svg" height="40px" width="40px" hspace="20px"></a>
-            </section>
-            <a href="#" class="scroll-to-top" title="Back to top"><i class="icon-chevron-up"></i></a>
-
-        </section>
-
-    </section>
-
+		<!-- SURVIVAL SECTION -->
+		<div class="row green-bg" id="projectSurvival">
+		
+			<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-sm-12"><h1>12 Item Survival Kit</h1></div>
+					<div class="col-sm-12"><p class="strong">For IXD302 I decided to create 12 icons based on a survival kit.</p></div>
+					<div class="col-sm-12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+					<div class="col-sm-12"><p>App concepts and visuals</p></div>
+					<div class="col-sm-12"><p>Lorem ipsum dolor</p></div>
+					<div class="col-sm-12"><p>sit amet, consectetur</p></div>
+					<div class="col-sm-12"><p>adipiscing elit</p></div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12 col-md-6">
+				<div class="fotorama" data-height="450" data-allowfullscreen="false">
+					<img src="images/survival-mockup.png">
+					<img src="images/garamond-mockup.png" height="50px">
+					<img src="images/eiffel-mockup.png">
+					<img src="images/master-app-thn.png">
+				</div>
+			</div>
+		</div>
+		
+		<!-- TYPEFACE SECTION -->
+		<div class="row white-bg" id="projectMasterApprentice">
+			<div class="col-sm-12 col-md-6">
+				<div class="fotorama" data-height="500" data-allowfullscreen="false">
+					<img src="images/master-app-thn.png">
+					<img src="images/travel_app-01.png" height="50px">
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-sm-12"><h1>Master Apprentice exercise</h1></div>
+					<div class="col-sm-12"><p class="strong">Illustrations I have recreated based on existing work</p></div>
+					<div class="col-sm-12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+					<div class="col-sm-12"><p>App concepts and visuals</p></div>
+					<div class="col-sm-12"><p>Lorem ipsum dolor</p></div>
+					<div class="col-sm-12"><p>sit amet, consectetur</p></div>
+					<div class="col-sm-12"><p>adipiscing elit</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- TYPEFACE SECTION -->
+		<div class="row green-bg" id="projectTypeface">
+		
+			<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-sm-12"><h1>Typeface Poster</h1></div>
+					<div class="col-sm-12"><p class="strong">Brand guidelines designed for myself</p></div>
+					<div class="col-sm-12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+					<div class="col-sm-12"><p>App concepts and visuals</p></div>
+					<div class="col-sm-12"><p>Lorem ipsum dolor</p></div>
+					<div class="col-sm-12"><p>sit amet, consectetur</p></div>
+					<div class="col-sm-12"><p>adipiscing elit</p></div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12 col-md-6">
+				<div class="fotorama" data-height="450" data-allowfullscreen="false">
+					<img src="images/garamond-mockup.png">
+					<img src="images/guidelines-mac.png">
+					<!--<img src="images/word_marque.png" data-caption="Colour version" height="500">
+					<img src="images/word_marque_black.png" data-caption="Monochrome/contrast" height="500">-->
+				</div>
+			</div>
+		</div>
+		
+		<!-- Social -->
+		<div class="row" id="projectSocialIcons" style="background-color: #449d44; text-align: center;">
+			<div class="col-sm-12">
+				<a href="https://brendanlemon.tumblr.com" class="tumblr"></a>
+				<a href="https://twitter.com/brendanIemon" class="twitter"></a> 
+				<a href="https://www.instagram.com/brendanplemon/?hl=en" class="instagram"></a>
+			</div>
+		</div>
+		
+		<!-- back to top link -->
     <a href="#" class="scroll-to-top" title="Back to top"><i class="icon-chevron-up"></i></a>
-
-</body>
-
-</html>
-
-<a href="#" class="scroll-to-top" title="Back to top"><i class="icon-chevron-up"></i></a>
-
-</section>
 
 </body>
 
