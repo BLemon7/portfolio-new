@@ -337,3 +337,9 @@ a.twitter {
 	height 100%;
 	width: 100%;
 }
+
+.slide { display: none }
+
+.btn-success {
+  background-color: #449d44;
+}
