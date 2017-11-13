@@ -33,8 +33,14 @@ $(document).ready(function() {
 
 	// hide .navbar first
 	$(".navbar.home").hide();
+	$(".opacity-layer").hide();
+	$('.opacity-layer').slideDown(1000, animateFirstText);
+		
 
-	$('.slide:first').slideDown(200, animateSlideText);
+				
+	function animateFirstText(){
+		$('.slide:first').slideDown(200, animateSlideText);
+	}
 				
 	function animateSlideText(){
 		$(this).next('.slide').slideDown(500, animateSlideText);
