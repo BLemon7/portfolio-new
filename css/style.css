@@ -116,10 +116,11 @@ h1, h2, span {
 
 /* HEADER SECTION */
 .header {
-	background-image: url(../images/lemon-bg2.png);
+	background-image: url(../images/seamlessicons.svgz); background-repeat: repeat;
 	color: #fff;
 	background-attachment: fixed;
 	background-color: #8bc640;
+    background-size: cover;
 }	
 
 .home.header, 
