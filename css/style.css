@@ -116,15 +116,27 @@ h1, h2, span {
 
 /* HEADER SECTION */
 .header {
-	background-image: url(../images/seamlessicons.svgz); background-repeat: repeat;
 	color: #fff;
 	background-attachment: fixed;
 	background-color: #8bc640;
-    background-size: cover;
+  background-size: cover;
+	background-repeat: repeat;
 }	
 
-.home.header, 
-.home.header .container {
+.home-page {
+	background-image: url(../images/lemon-bg2.png); 
+}
+
+.branding {
+	background-image: url(../images/seamless.svgz);
+}
+
+.illustrations {
+	background-image: url(../images/seamlessicons.svgz);
+}
+
+.header, 
+.header .container {
 	height: 100vh;
 }	
 .row.header {
