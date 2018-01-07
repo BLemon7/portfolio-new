@@ -57,7 +57,7 @@ h2{
 
 
 p {
-  font-size: 18px;
+  font-size: 19px;
   letter-spacing: 1px;
 	padding-bottom: 10px;
 }
@@ -207,6 +207,8 @@ h1, h2, span {
 	color: #FFF;
 }
 
+
+
 .white-bg {
 	background: #fff;
 	color: #000;
@@ -218,6 +220,9 @@ h1, h2, span {
   padding: 50px 0px 20px 50px;
 }
 
+.social-div {
+    padding-left: 0px;
+}
 
 #projectContact {
 	text-align: center;
@@ -268,6 +273,10 @@ h1, h2, span {
 	background-color: #f5f5f5;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+.padding-right-50 {
+    padding-right: 50px;
 }
 
 .footer .container {

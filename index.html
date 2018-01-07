@@ -6,7 +6,10 @@
 		<!-- set view port for bootstrap responsiveness -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title>Index</title>
+		<title>Portfolio</title>
+        
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
 		
 		<!-- external CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -37,6 +40,7 @@
 						<div class="row slide"><div class="col-sm-12"><a class="btn btn-success btn-lg btn-md top30" href="#projectAbout" role="button">About me &raquo;</a></div></div>
 					</div>
 				</div>
+    
 		</div>
 		
 		<nav class="navbar navbar-default home">
@@ -73,30 +77,50 @@
 		<!-- ABOUT ME -->
 		<div class="row green-bg" id="projectAbout">
 		
-			<div class="col-sm-12 col-md-6">
-				<div class="row">
-					<div class="col-sm-12"><h1>About me</h1></div>
-					<div class="col-sm-12"><p class="strong">I'm Brendan Lemon, a 2nd year student in BDes Interaction Design at Ulster University, Belfast.</p></div>
-					<div class="col-sm-12"><p></p></div>
-					<div class="col-sm-12"><p>I have a keen interest in UI/UX design and Illustration.</p></div>
-					<div class="col-sm-12"><p>My goal is to create the best possible user experience, and I enjoy learning about how the user's mind works in order to do so.</p></div>
-					<div class="col-sm-12"><p></p></div>
-				</div>
-				<div class="row"><div class="col-sm-12">&nbsp;</div></div>
-				<div class="row center">
-					<div class="col-sm-12"><p><a class="btn btn-lg btn-success" href="cv.html" role="button">View CV</a></p></div>
-				</div>
-			</div>
-			
-			<div class="col-sm-12 col-md-6">
-				<div class="fotorama" data-height="450" data-allowfullscreen="false">
-					<img src="images/survival-mockup.png" /></div>
-				</div>
-			</div>
-		</div>
+            <div class="col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>About me</h1>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="strong">I'm Brendan Lemon, a 2nd year student in BDes Interaction Design at Ulster University, Belfast.</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p></p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p>I have a keen interest in UI/UX design and Illustration.</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p>My goal is to create the best possible user experience, and I enjoy learning about how the user's mind works in order to do so.</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">&nbsp;</div>
+                </div>
+                <div class="row center">
+                    <div class="col-sm-12">
+                     <!--   <p><a class="btn btn-lg btn-success" href="cv.html" role="button">View CV</a></p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <div class="fotorama" data-height="450" data-allowfullscreen="false" data-transition="crossfade"  data-arrows="false" data-autoplay="3000">
+                    <img src="images/sketchpad.png" />
+                    <img src="images/frontend.png" />
+                    <img src="images/ux-ipad.png" />
+                </div>
+            </div>
+        </div>
+    
+    
 
 		<!-- Icons, Illustrations, Infographics -->
-		<div class="row white-bg" id="projectIcons">
+		<div class="row white-bg padding-right-50" id="projectIcons">
 			<div class="col-sm-12 col-md-6">
 				<div class="fotorama" data-height="450" data-allowfullscreen="false">
                     <img src="images/fast-helmet.png">
@@ -118,8 +142,8 @@
 			</div>
 		</div>
 
-		<!-- Brand Content -->
-		<div class="row green-bg" id="projectBrandContent">				
+		<!-- Web Content -->
+		<div class="row green-bg padding-right-50" id="projectBrandContent">				
 			<div class="col-sm-12 col-md-6">
 				<div class="row">
 					<div class="col-sm-12"><h1>Web Content</h1></div>
@@ -135,8 +159,8 @@
 			
 			<div class="col-sm-12 col-md-6">
 				<div class="fotorama" data-height="450"  data-allowfullscreen="false">
-					<img src="images/visual_marque.png" height="30px">
-					<img src="images/guidelines-mac.png">
+					<img src="images/elements.png">
+					<img src="images/survivicons.png">
 				</div>
 			</div>
 		</div>
@@ -166,7 +190,7 @@
 		</div>
 		
 		<!-- Contact Me -->
-		<div class="row green-bg" id="projectContact">
+		<div class="row green-bg social-div" id="projectContact">
 			<div class="col-sm-12">
 				<h2>Contact</h2>
 				<p>Currently in search of placement opportunities!</p>
